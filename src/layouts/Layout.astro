@@ -1,5 +1,6 @@
 ---
 import Navbar from '../components/Navbar.astro'; // 1. Importas el menú
+import Footer from '../components/Footer.astro'; // 1. Importar
 const { title, description = "WellData Partners: Advanced Data Architecture and Machine Learning for O&G Operators." } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -48,5 +49,6 @@ const { title, description = "WellData Partners: Advanced Data Architecture and 
 </head>
 <body>
     <Navbar /> <slot />
+    <Footer /> 
 </body>
 </html>
