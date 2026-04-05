@@ -14,34 +14,51 @@ const { Content } = await entry.render();
 ---
 
 <Layout title={`${entry.data.title} | WellData Partners`} description={entry.data.description}>
-    <article class="article-content">
-        <header>
-            <a href="/blog" class="back-link">← Back to Insights</a>
-            <div class="meta">{entry.data.pubDate.toDateString()} | By {entry.data.author}</div>
-            <h1>{entry.data.title}</h1>
-        </header>
-        <div class="markdown-body">
-            <Content />
-        </div>
-    </article>
+    <main class="article-wrapper">
+        <article class="article-content">
+            <header>
+                <a href="/blog" class="back-link">← Back to Insights</a>
+                <div class="meta">{entry.data.pubDate.toDateString()} | By {entry.data.author}</div>
+                <h1>{entry.data.title}</h1>
+            </header>
+            
+            <div class="markdown-body">
+                <Content />
+            </div>
+
+            <footer class="contact-card">
+                <h3>¿Buscas optimizar tus operaciones en la cuenca?</h3>
+                <p>Ayudamos a operadoras de O&G a transformar sus datos de campo en inteligencia predictiva para reducir el OPEX.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/in/TU-USUARIO-LINKEDIN" target="_blank" class="btn-linkedin">
+                        Connect on LinkedIn
+                    </a>
+                    <a href="mailto:contact@welldatapartners.com" class="btn-email">
+                        Request Technical Consultation
+                    </a>
+                </div>
+            </footer>
+        </article>
+    </main>
 </Layout>
 
 <style>
+    .article-wrapper { background-color: var(--bg-dark); }
     .article-content {
-        max-width: 700px;
+        max-width: 750px;
         margin: 0 auto;
-        padding: 6rem 2rem;
+        padding: 6rem 2.5rem;
     }
-    .back-link { color: var(--accent); text-decoration: none; display: block; margin-bottom: 2rem; }
-    .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; }
-    h1 { font-size: 3rem; line-height: 1.2; margin-bottom: 3rem; }
+    .back-link { color: var(--accent); text-decoration: none; display: block; margin-bottom: 2rem; font-weight: 600; }
+    .meta { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; text-transform: uppercase; }
+    h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 3rem; color: white; font-weight: 800; }
     
-    /* Estilos para el contenido Markdown */
     .markdown-body {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         line-height: 1.8;
-        color: #D1D5DB;
+        color: #E5E7EB;
+        margin-bottom: 5rem;
     }
-    .markdown-body :global(h2) { color: white; margin-top: 3rem; }
-    .markdown-body :global(p) { margin-bottom: 1.5rem; }
-</style>
+
+    /* Estilos del Bloque de Contacto */
+    .contact-card {
