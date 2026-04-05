@@ -20,7 +20,7 @@ posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
                     <div class="post-meta">
                         {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
                     </div>
-                    <a href={`/blog/${post.slug}`} class="post-title">
+                    <a href={`/blog/${post.id}`} class="post-title">
                         <h2>{post.data.title}</h2>
                     </a>
                     <p class="post-description">{post.data.description}</p>
