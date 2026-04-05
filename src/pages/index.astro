@@ -8,11 +8,23 @@ import Layout from '../layouts/Layout.astro';
 		<div class="container">
 			<span class="badge">Advanced Data Architecture & Machine Learning</span>
 			<h1>Turning Raw Sensor Data into <span class="text-gradient">Actionable Intelligence</span></h1>
+			<p class="slogan">Bridging the Gap Between Field Data and Operational Excellence.</p>
 			<p>We help O&G operators in Vaca Muerta reduce OPEX and eliminate NPT through edge-to-cloud infrastructure and predictive maintenance.</p>
 			<div class="hero-actions">
 				<a href="#services" class="btn-primary">Our Solutions</a>
 				<a href="/blog" class="btn-secondary">Technical Insights</a>
 			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<div class="section-header">
+				<h2>Our Mission</h2>
+			</div>
+			<p class="mission-text">
+				At WellData Partners, our mission is to empower O&G operators with the data infrastructure and predictive intelligence needed to thrive in the era of digital energy. By eliminating data silos and deploying edge-to-cloud solutions, we transform raw field information into a strategic asset that reduces OPEX and drives sustainable growth in unconventional basins.
+			</p>
 		</div>
 	</section>
 
@@ -81,6 +93,25 @@ import Layout from '../layouts/Layout.astro';
 	.hero-actions { display: flex; gap: 1rem; justify-content: center; }
 	.btn-primary { background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
 	.btn-secondary { border: 1px solid rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; }
+
+	.slogan {
+		font-size: 1.4rem;
+		font-weight: 600;
+		color: #60A5FA;
+		margin-bottom: 1rem;
+		letter-spacing: -0.01em;
+	}
+
+	/* About / Mission */
+	.about { padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
+	.mission-text {
+		font-size: 1.3rem;
+		line-height: 1.8;
+		color: var(--text-muted);
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
 
 	/* Services */
 	.services { padding: 8rem 0; background: rgba(255,255,255,0.02); }
