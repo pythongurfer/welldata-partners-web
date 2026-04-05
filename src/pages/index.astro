@@ -1,8 +1,105 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
 ---
 
-<Layout title="WellData Partners | Data Intelligence for Oil & Gas">
-    <Hero />
+<Layout title="WellData Partners | Data Intelligence for O&G" description="Maximizing operational efficiency in Vaca Muerta through advanced data architecture and predictive analytics.">
+	
+	<section class="hero">
+		<div class="container">
+			<span class="badge">Advanced Data Architecture & Machine Learning</span>
+			<h1>Turning Raw Sensor Data into <span class="text-gradient">Actionable Intelligence</span></h1>
+			<p>We help O&G operators in Vaca Muerta reduce OPEX and eliminate NPT through edge-to-cloud infrastructure and predictive maintenance.</p>
+			<div class="hero-actions">
+				<a href="#services" class="btn-primary">Our Solutions</a>
+				<a href="/blog" class="btn-secondary">Technical Insights</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="services" class="services">
+		<div class="container">
+			<div class="section-header">
+				<h2>Specialized Data Solutions</h2>
+				<p>Bridging the gap between field sensors and boardroom decisions.</p>
+			</div>
+
+			<div class="services-grid">
+				<div class="service-card">
+					<div class="icon">📡</div>
+					<h3>Edge-to-Cloud Architecture</h3>
+					<p>Deploying robust data pipelines in remote environments. We solve connectivity challenges in the field to ensure zero-latency data ingestion.</p>
+					<ul>
+						<li>IIoT Sensor Integration</li>
+						<li>Protocol Conversion (Modbus/OPC-UA)</li>
+						<li>Unified Namespace (UNS) Design</li>
+					</ul>
+				</div>
+
+				<div class="service-card">
+					<div class="icon">🤖</div>
+					<h3>Predictive Operations</h3>
+					<p>Moving from reactive to proactive maintenance. Our ML models detect failure patterns in Artificial Lift systems before they happen.</p>
+					<ul>
+						<li>Failure Prediction Models</li>
+						<li>Anomaly Detection</li>
+						<li>Optimization of Frac Fleets</li>
+					</ul>
+				</div>
+
+				<div class="service-card">
+					<div class="icon">📊</div>
+					<h3>Real-time Analytics</h3>
+					<p>Visualizing what matters. Custom dashboards designed for superintendents and engineers to monitor field KPIs in real-time.</p>
+					<ul>
+						<li>Operational Dashboards</li>
+						<li>Automated Reporting</li>
+						<li>OPEX Tracking & Forecasting</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </Layout>
+
+<style>
+	.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+	
+	/* Hero */
+	.hero { padding: 10rem 0 6rem; text-align: center; }
+	.badge { background: rgba(37, 99, 235, 0.1); color: var(--accent); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+	h1 { font-size: 4rem; line-height: 1.1; margin: 1.5rem 0; font-weight: 800; }
+	.text-gradient { background: linear-gradient(to right, #2563EB, #60A5FA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+	p { color: var(--text-muted); font-size: 1.25rem; max-width: 700px; margin: 0 auto 2.5rem; }
+	
+	.hero-actions { display: flex; gap: 1rem; justify-content: center; }
+	.btn-primary { background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
+	.btn-secondary { border: 1px solid rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; }
+
+	/* Services */
+	.services { padding: 8rem 0; background: rgba(255,255,255,0.02); }
+	.section-header { text-align: center; margin-bottom: 4rem; }
+	.section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+	
+	.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+	
+	.service-card { 
+		background: rgba(255,255,255,0.03); 
+		padding: 3rem 2rem; 
+		border-radius: 1rem; 
+		border: 1px solid rgba(255,255,255,0.05);
+		transition: transform 0.3s ease;
+	}
+	.service-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+	.icon { font-size: 2.5rem; margin-bottom: 1.5rem; }
+	h3 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
+	.service-card p { font-size: 1rem; text-align: left; margin-bottom: 1.5rem; }
+	
+	ul { list-style: none; padding: 0; text-align: left; }
+	li { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; align-items: center; }
+	li::before { content: "→"; color: var(--accent); margin-right: 10px; font-weight: bold; }
+
+	@media (max-width: 768px) {
+		h1 { font-size: 2.5rem; }
+	}
+</style>
