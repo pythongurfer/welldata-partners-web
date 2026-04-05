@@ -1,4 +1,5 @@
 ---
+import Navbar from '../components/Navbar.astro'; // 1. Importas el menú
 const { title, description = "WellData Partners: Advanced Data Architecture and Machine Learning for O&G Operators." } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -40,9 +41,12 @@ const { title, description = "WellData Partners: Advanced Data Architecture and 
             -webkit-font-smoothing: antialiased;
         }
         * { box-sizing: border-box; }
+        main {
+            padding-top: 80px; /* Esto empuja el contenido hacia abajo para que no lo tape el Navbar */
+        }
     </style>
 </head>
 <body>
-    <slot />
+    <Navbar /> <slot />
 </body>
 </html>
