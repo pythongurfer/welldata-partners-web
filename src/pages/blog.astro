@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout title="Insights | WellData Partners" description="Technical analysis and operational efficiency strategies for the O&G industry.">
+    <main class="blog-container">
+        <header class="blog-header">
+            <a href="/" class="back-link">← Home</a>
+            <h1>Technical Insights</h1>
+            <p>Strategies for OPEX reduction and data-driven operations.</p>
+        </header>
+
+        <section class="post-list">
+            {posts.map(post => (
+                <article class="post-item">
+                    <div class="post-meta">
+                        {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                    </div>
+                    <a href={`/blog/${post.slug}`} class="post-title">
+                        <h2>{post.data.title}</h2>
+                    </a>
+                    <p class="post-description">{post.data.description}</p>
+                    <div class="tags">
+                        {post.data.tags.map(tag => <span class="tag">#{tag}</span>)}
+                    </div>
+                </article>
+            ))}
+        </section>
+    </main>
+</Layout>
+
+<style>
+    .blog-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+    .back-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.9rem;
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .blog-header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .blog-header p {
+        color: var(--text-muted);
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+    }
+    .post-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .post-meta {
+        font-size: 0.85rem;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+    }
+    .post-title {
+        text-decoration: none;
+        color: var(--text-main);
+    }
+    .post-title h2 {
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+        transition: color 0.2s;
+    }
+    .post-title:hover h2 {
+        color: var(--accent);
+    }
+    .post-description {
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+    }
+    .tag {
+        font-size: 0.8rem;
+        color: var(--accent);
+        margin-right: 1rem;
+        opacity: 0.8;
+    }
+</style>
