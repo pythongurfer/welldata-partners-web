@@ -85,4 +85,16 @@ Las operadoras que sigan confiando en reportes diarios en Excel y mantenimiento 
 
 ---
 
+### Referencias y Lecturas Recomendadas
+
+1. Zhu, J., et al. *"Surfing the Digital Wave: Lessons Learned from Applying Machine Learning to ESP Surveillance"*. SPE-199147-MS, 2020. [→ OnePetro](https://doi.org/10.2118/199147-MS)
+2. Abdelaziz, M., et al. *"Improving ESP Run Life Using Advanced Monitoring and Predictive Analytics"*. SPE-203371-MS, 2020. [→ OnePetro](https://doi.org/10.2118/203371-MS)
+3. Lea, J.F., Nickens, H.V., & Wells, M.R. *"Gas Well Deliquification"*, 2nd Ed., Gulf Professional Publishing, 2008. [→ Elsevier](https://shop.elsevier.com/books/gas-well-deliquification/lea/978-0-7506-8280-0)
+4. Walker, R. & Boyd, D. *"A Practical Unified Namespace Architecture for Industrial IoT"*. ISA Transactions, Vol. 134, 2023. [→ ISA](https://www.isa.org/intech-home/2023/isa-transactions)
+5. HiveMQ. *"MQTT Sparkplug B Specification"*. Eclipse Foundation, 2023. [→ Sparkplug Spec](https://sparkplug.eclipse.org/specification/version/3.0/documents/sparkplug-specification-3.0.0.pdf)
+6. IAPG. *"Anuario de la Industria del Petróleo y Gas"*, 2025. [→ IAPG](https://www.iapg.org.ar)
+7. Wood Mackenzie. *"Vaca Muerta Economics: Lifting Costs and Operational Efficiency"*, Q1 2026. [→ Wood Mackenzie](https://www.woodmac.com)
+
+---
+
 *¿Está su operación preparada para la siguiente fase de eficiencia? Contacte con nuestro equipo técnico para una evaluación de madurez de datos en sus activos de la Cuenca Neuquina.*
