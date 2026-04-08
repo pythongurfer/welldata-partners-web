@@ -1,49 +1,61 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ROICalculator from '../components/ROICalculator.astro'; // Importar
+import ROICalculator from '../components/ROICalculator.astro';
 ---
 
 <Layout title="WellData Partners | Data Intelligence for O&G" description="Maximizing operational efficiency in Vaca Muerta through advanced data architecture and predictive analytics.">
-	
+
+	<!-- Hero -->
 	<section class="hero">
-		<div class="container">
-			<span class="badge">Advanced Data Architecture & Machine Learning</span>
+		<div class="hero-bg">
+			<div class="gradient-orb orb-1"></div>
+			<div class="gradient-orb orb-2"></div>
+			<div class="grid-overlay"></div>
+		</div>
+		<div class="container hero-content">
+			<span class="eyebrow">Advanced Data Architecture & Machine Learning</span>
 			<h1>Turning Raw Sensor Data into <span class="text-gradient">Actionable Intelligence</span></h1>
-			<p class="slogan">Bridging the Gap Between Field Data and Operational Excellence.</p>
-			<p>We help O&G operators in Vaca Muerta reduce OPEX and eliminate NPT through edge-to-cloud infrastructure and predictive maintenance.</p>
+			<p class="hero-subtitle">Bridging the Gap Between Field Data and Operational Excellence.</p>
+			<p class="hero-description">We help O&G operators in Vaca Muerta reduce OPEX and eliminate NPT through edge-to-cloud infrastructure and predictive maintenance.</p>
 			<div class="hero-actions">
-				<a href="#services" class="btn-primary">Our Solutions</a>
-				<a href="/blog" class="btn-secondary">Technical Insights</a>
+				<a href="#services" class="btn-primary">
+					Our Solutions
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+				</a>
+				<a href="/blog" class="btn-ghost">Technical Insights</a>
 			</div>
 		</div>
 	</section>
 
-	<section id="about" class="about">
+	<!-- Mission -->
+	<section id="about" class="section mission">
 		<div class="container">
-			<div class="section-header">
-				<h2>Our Mission</h2>
+			<div class="mission-inner">
+				<div class="section-label">Our Mission</div>
+				<p class="mission-text">
+					At WellData Partners, we empower O&G operators with the data infrastructure and predictive intelligence needed to thrive in the era of digital energy. By eliminating data silos and deploying edge-to-cloud solutions, we transform raw field information into a strategic asset that reduces OPEX and drives sustainable growth in unconventional basins.
+				</p>
 			</div>
-			<p class="mission-text">
-				At WellData Partners, our mission is to empower O&G operators with the data infrastructure and predictive intelligence needed to thrive in the era of digital energy. By eliminating data silos and deploying edge-to-cloud solutions, we transform raw field information into a strategic asset that reduces OPEX and drives sustainable growth in unconventional basins.
-			</p>
 		</div>
 	</section>
 
-	<section id="services" class="services">
+	<!-- Services -->
+	<section id="services" class="section services">
 		<div class="container">
 			<div class="section-header">
+				<div class="section-label">What We Do</div>
 				<h2>Specialized Data Solutions</h2>
-				<p>Bridging the gap between field sensors and boardroom decisions.</p>
+				<p class="section-subtitle">Bridging the gap between field sensors and boardroom decisions.</p>
 			</div>
 
 			<div class="services-grid">
 				<div class="service-card">
-					<div class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="M9 10V8a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+					<div class="card-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="M9 10V8a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
 					</div>
 					<h3>Edge-to-Cloud Architecture</h3>
 					<p>Deploying robust data pipelines in remote environments. We solve connectivity challenges in the field to ensure zero-latency data ingestion.</p>
-					<ul>
+					<ul class="card-features">
 						<li>IIoT Sensor Integration</li>
 						<li>Protocol Conversion (Modbus/OPC-UA)</li>
 						<li>Unified Namespace (UNS) Design</li>
@@ -51,12 +63,12 @@ import ROICalculator from '../components/ROICalculator.astro'; // Importar
 				</div>
 
 				<div class="service-card">
-					<div class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m19 20-3.5-3.5"/><circle cx="15" cy="15" r="3"/><path d="M2 20h.01"/><path d="M7 20h.01"/><path d="M12 20h.01"/><path d="m2 10 3-3 3 3 3-3 3 3"/></svg>
+					<div class="card-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m19 20-3.5-3.5"/><circle cx="15" cy="15" r="3"/><path d="M2 20h.01"/><path d="M7 20h.01"/><path d="M12 20h.01"/><path d="m2 10 3-3 3 3 3-3 3 3"/></svg>
 					</div>
 					<h3>Predictive Operations</h3>
 					<p>Moving from reactive to proactive maintenance. Our ML models detect failure patterns in Artificial Lift systems before they happen.</p>
-					<ul>
+					<ul class="card-features">
 						<li>Failure Prediction Models</li>
 						<li>Anomaly Detection</li>
 						<li>Optimization of Frac Fleets</li>
@@ -64,12 +76,12 @@ import ROICalculator from '../components/ROICalculator.astro'; // Importar
 				</div>
 
 				<div class="service-card">
-					<div class="icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+					<div class="card-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
 					</div>
 					<h3>Real-time Analytics</h3>
 					<p>Visualizing what matters. Custom dashboards designed for superintendents and engineers to monitor field KPIs in real-time.</p>
-					<ul>
+					<ul class="card-features">
 						<li>Operational Dashboards</li>
 						<li>Automated Reporting</li>
 						<li>OPEX Tracking & Forecasting</li>
@@ -79,11 +91,13 @@ import ROICalculator from '../components/ROICalculator.astro'; // Importar
 		</div>
 	</section>
 
-	<section id="calculator" class="calculator-section">
+	<!-- Calculator -->
+	<section id="calculator" class="section calculator-section">
 		<div class="container">
 			<div class="section-header">
+				<div class="section-label">ROI Estimator</div>
 				<h2>Calculate Your Savings</h2>
-				<p>See the real economic impact of optimizing your artificial lift operations.</p>
+				<p class="section-subtitle">See the real economic impact of optimizing your artificial lift operations.</p>
 			</div>
 			<ROICalculator />
 		</div>
@@ -92,83 +106,305 @@ import ROICalculator from '../components/ROICalculator.astro'; // Importar
 </Layout>
 
 <style>
-	.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
-	
-	/* Hero */
-	.hero { padding: 10rem 0 6rem; text-align: center; }
-	.badge { background: rgba(37, 99, 235, 0.1); color: var(--accent); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-	h1 { font-size: 4rem; line-height: 1.1; margin: 1.5rem 0; font-weight: 800; }
-	.text-gradient { background: linear-gradient(to right, #2563EB, #60A5FA); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-	p { color: var(--text-muted); font-size: 1.25rem; max-width: 700px; margin: 0 auto 2.5rem; }
-	
-	.hero-actions { display: flex; gap: 1rem; justify-content: center; }
-	.btn-primary { background: var(--accent); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; }
-	.btn-secondary { border: 1px solid rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; }
-
-	.slogan {
-		font-size: 1.4rem;
+	/* ═══ Container ═══ */
+	.container {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 0 var(--space-xl);
+	}
+	.section {
+		padding: var(--space-5xl) 0;
+		position: relative;
+	}
+	.section-label {
+		font-size: 0.75rem;
 		font-weight: 600;
-		color: #60A5FA;
-		margin-bottom: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent-light);
+		margin-bottom: var(--space-md);
+	}
+	.section-header {
+		text-align: center;
+		margin-bottom: var(--space-4xl);
+	}
+	.section-header h2 {
+		font-size: 2.5rem;
+		font-weight: 400;
 		letter-spacing: -0.01em;
+		margin-bottom: var(--space-md);
+	}
+	.section-subtitle {
+		color: var(--text-tertiary);
+		font-size: 1.125rem;
+		max-width: 550px;
+		margin: 0 auto;
 	}
 
-	/* About / Mission */
-	.about { padding: 6rem 0; border-top: 1px solid rgba(255,255,255,0.05); }
-	.mission-text {
-		font-size: 1.3rem;
-		line-height: 1.8;
-		color: var(--text-muted);
+	/* ═══ Hero ═══ */
+	.hero {
+		position: relative;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+		padding: var(--space-5xl) 0 var(--space-4xl);
+	}
+	.hero-bg {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		overflow: hidden;
+	}
+	.gradient-orb {
+		position: absolute;
+		border-radius: 50%;
+		filter: blur(120px);
+		opacity: 0.4;
+	}
+	.orb-1 {
+		width: 600px;
+		height: 600px;
+		background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
+		top: -10%;
+		right: -5%;
+		animation: float 20s ease-in-out infinite;
+	}
+	.orb-2 {
+		width: 400px;
+		height: 400px;
+		background: radial-gradient(circle, rgba(99, 102, 241, 0.2), transparent 70%);
+		bottom: 10%;
+		left: -5%;
+		animation: float 25s ease-in-out infinite reverse;
+	}
+	.grid-overlay {
+		position: absolute;
+		inset: 0;
+		background-image:
+			linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+		background-size: 60px 60px;
+		mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+		-webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+	}
+	@keyframes float {
+		0%, 100% { transform: translate(0, 0) scale(1); }
+		33% { transform: translate(30px, -30px) scale(1.05); }
+		66% { transform: translate(-20px, 20px) scale(0.95); }
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		animation: fadeInUp 0.8s ease-out;
+	}
+	.eyebrow {
+		display: inline-block;
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--accent-light);
+		background: var(--accent-glow);
+		border: 1px solid rgba(59, 130, 246, 0.2);
+		padding: 0.5rem 1.25rem;
+		border-radius: 100px;
+		margin-bottom: var(--space-xl);
+	}
+  .hero h1 {
+		font-size: clamp(2.75rem, 5.5vw, 4.75rem);
+		font-weight: 400;
+		line-height: 1.1;
+		letter-spacing: -0.015em;
+		margin-bottom: var(--space-lg);
 		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-gradient {
+		background: linear-gradient(135deg, #3B82F6, #60A5FA, #93C5FD);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+	.hero-subtitle {
+		font-size: 1.25rem;
+		font-weight: 500;
+		color: var(--accent-light);
+		margin-bottom: var(--space-md);
+		letter-spacing: -0.01em;
+	}
+	.hero-description {
+		font-size: 1.125rem;
+		color: var(--text-tertiary);
+		max-width: 600px;
+		margin: 0 auto var(--space-2xl);
+		line-height: 1.7;
+	}
+	.hero-actions {
+		display: flex;
+		gap: var(--space-md);
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.btn-primary {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: var(--accent);
+		color: white;
+		padding: 0.875rem 1.75rem;
+		border-radius: var(--radius-md);
+		font-weight: 600;
+		font-size: 0.9375rem;
+		transition: all var(--transition-fast);
+		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+	}
+	.btn-primary:hover {
+		background: var(--accent-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+	}
+	.btn-primary svg { transition: transform var(--transition-fast); }
+	.btn-primary:hover svg { transform: translateX(3px); }
+	.btn-ghost {
+		display: inline-flex;
+		align-items: center;
+		color: var(--text-secondary);
+		padding: 0.875rem 1.75rem;
+		border-radius: var(--radius-md);
+		font-weight: 500;
+		font-size: 0.9375rem;
+		border: 1px solid var(--border-primary);
+		transition: all var(--transition-fast);
+	}
+	.btn-ghost:hover {
+		color: var(--text-primary);
+		border-color: var(--border-hover);
+		background: rgba(255, 255, 255, 0.03);
+	}
+
+	/* ═══ Mission ═══ */
+	.mission {
+		border-top: 1px solid var(--border-primary);
+	}
+	.mission-inner {
+		max-width: 740px;
 		margin: 0 auto;
 		text-align: center;
 	}
+	.mission-text {
+		font-size: 1.25rem;
+		line-height: 1.8;
+		color: var(--text-tertiary);
+		font-weight: 400;
+	}
 
-	/* Services */
-	.services { padding: 8rem 0; background: rgba(255,255,255,0.02); }
+	/* ═══ Services ═══ */
+	.services {
+		background:
+			radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.03) 0%, transparent 60%),
+			radial-gradient(ellipse at 80% 50%, rgba(99, 102, 241, 0.02) 0%, transparent 60%);
+	}
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-xl);
+	}
+	.service-card {
+		background: var(--bg-card);
+		padding: var(--space-2xl);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--border-primary);
+		transition: all var(--transition-base);
+		position: relative;
+		overflow: hidden;
+	}
+	.service-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: linear-gradient(90deg, transparent, var(--accent), transparent);
+		opacity: 0;
+		transition: opacity var(--transition-base);
+	}
+	.service-card:hover {
+		border-color: var(--border-hover);
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-glow);
+		background: var(--bg-card-hover);
+	}
+	.service-card:hover::before { opacity: 1; }
+	.card-icon {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--accent-glow);
+		border: 1px solid rgba(59, 130, 246, 0.15);
+		border-radius: var(--radius-md);
+		color: var(--accent-light);
+		margin-bottom: var(--space-lg);
+	}
+	.service-card h3 {
+		font-size: 1.25rem;
+		font-weight: 400;
+		letter-spacing: 0;
+		margin-bottom: var(--space-md);
+	}
+	.service-card p {
+		font-size: 0.9375rem;
+		color: var(--text-tertiary);
+		line-height: 1.7;
+		margin-bottom: var(--space-lg);
+	}
+	.card-features {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+	.card-features li {
+		font-size: 0.8125rem;
+		color: var(--text-tertiary);
+		display: flex;
+		align-items: center;
+		gap: var(--space-sm);
+	}
+	.card-features li::before {
+		content: '';
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: var(--accent);
+		flex-shrink: 0;
+	}
 
-	/* Calculator */
+	/* ═══ Calculator Section ═══ */
 	.calculator-section {
-		padding: 6rem 0 8rem;
-		background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.03) 50%, transparent 100%);
-		border-top: 1px solid rgba(255,255,255,0.05);
+		border-top: 1px solid var(--border-primary);
 	}
 
-	.section-header { text-align: center; margin-bottom: 4rem; }
-	.section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-	
-	.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-	
-	.service-card { 
-		background: rgba(255,255,255,0.03); 
-		padding: 3rem 2rem; 
-		border-radius: 1rem; 
-		border: 1px solid rgba(255,255,255,0.05);
-		transition: transform 0.3s ease;
+	/* ═══ Responsive ═══ */
+	@media (max-width: 960px) {
+		.services-grid {
+			grid-template-columns: 1fr;
+			max-width: 500px;
+			margin: 0 auto;
+		}
 	}
-	.service-card:hover { transform: translateY(-10px); border-color: var(--accent); }
-	.icon { 
-    margin-bottom: 1.5rem;
-    color: var(--accent); /* Usará el azul que definimos */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-	}
-	.icon svg {
-    opacity: 0.9;
-    /* Un pequeño resplandor sutil para que destaquen en el fondo oscuro */
-    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.3));
-	}
-	h3 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
-	.service-card p { font-size: 1rem; text-align: left; margin-bottom: 1.5rem; }
-	
-	ul { list-style: none; padding: 0; text-align: left; }
-	li { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; align-items: center; }
-	li::before { content: "→"; color: var(--accent); margin-right: 10px; font-weight: bold; }
-
 	@media (max-width: 768px) {
-		h1 { font-size: 2.5rem; }
+		.hero h1 { font-size: 2.5rem; }
+		.section { padding: var(--space-4xl) 0; }
+		.section-header { margin-bottom: var(--space-2xl); }
+		.section-header h2 { font-size: 2rem; }
+		.hero-actions { flex-direction: column; align-items: center; }
 	}
 </style>
-
-
