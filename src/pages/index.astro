@@ -117,10 +117,10 @@ import ROICalculator from '../components/ROICalculator.astro';
 		position: relative;
 	}
 	.section-label {
-		font-size: 0.75rem;
+		font-size: 0.6875rem;
 		font-weight: 600;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.15em;
 		color: var(--accent-light);
 		margin-bottom: var(--space-md);
 	}
@@ -161,24 +161,24 @@ import ROICalculator from '../components/ROICalculator.astro';
 	.gradient-orb {
 		position: absolute;
 		border-radius: 50%;
-		filter: blur(120px);
-		opacity: 0.4;
+		filter: blur(140px);
+		opacity: 0.2;
 	}
 	.orb-1 {
-		width: 600px;
-		height: 600px;
-		background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
+		width: 500px;
+		height: 500px;
+		background: radial-gradient(circle, rgba(59, 130, 246, 0.25), transparent 70%);
 		top: -10%;
 		right: -5%;
-		animation: float 20s ease-in-out infinite;
+		animation: float 30s ease-in-out infinite;
 	}
 	.orb-2 {
-		width: 400px;
-		height: 400px;
-		background: radial-gradient(circle, rgba(99, 102, 241, 0.2), transparent 70%);
+		width: 350px;
+		height: 350px;
+		background: radial-gradient(circle, rgba(6, 182, 212, 0.15), transparent 70%);
 		bottom: 10%;
 		left: -5%;
-		animation: float 25s ease-in-out infinite reverse;
+		animation: float 35s ease-in-out infinite reverse;
 	}
 	.grid-overlay {
 		position: absolute;
@@ -203,15 +203,12 @@ import ROICalculator from '../components/ROICalculator.astro';
 	}
 	.eyebrow {
 		display: inline-block;
-		font-size: 0.75rem;
+		font-size: 0.6875rem;
 		font-weight: 600;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.15em;
 		color: var(--accent-light);
-		background: var(--accent-glow);
-		border: 1px solid rgba(59, 130, 246, 0.2);
-		padding: 0.5rem 1.25rem;
-		border-radius: 100px;
+		padding: 0;
 		margin-bottom: var(--space-xl);
 	}
   .hero h1 {
@@ -225,17 +222,17 @@ import ROICalculator from '../components/ROICalculator.astro';
 		margin-right: auto;
 	}
 	.text-gradient {
-		background: linear-gradient(135deg, #3B82F6, #60A5FA, #93C5FD);
+		background: linear-gradient(135deg, var(--accent), var(--cyan));
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 	}
 	.hero-subtitle {
-		font-size: 1.25rem;
+		font-size: 1.125rem;
 		font-weight: 500;
 		color: var(--accent-light);
 		margin-bottom: var(--space-md);
-		letter-spacing: -0.01em;
+		letter-spacing: 0;
 	}
 	.hero-description {
 		font-size: 1.125rem;
@@ -254,37 +251,38 @@ import ROICalculator from '../components/ROICalculator.astro';
 		display: inline-flex;
 		align-items: center;
 		gap: 0.5rem;
-		background: var(--accent);
+		background: linear-gradient(135deg, var(--accent), var(--cyan));
 		color: white;
-		padding: 0.875rem 1.75rem;
-		border-radius: var(--radius-md);
+		padding: 0.8125rem 2rem;
+		border-radius: var(--radius-sm);
 		font-weight: 600;
-		font-size: 0.9375rem;
-		transition: all var(--transition-fast);
-		box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+		font-size: 0.875rem;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		transition: all var(--transition-base);
 	}
 	.btn-primary:hover {
-		background: var(--accent-dark);
-		transform: translateY(-2px);
-		box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+		background: linear-gradient(135deg, var(--accent-light), var(--cyan-light));
+		box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
 	}
 	.btn-primary svg { transition: transform var(--transition-fast); }
-	.btn-primary:hover svg { transform: translateX(3px); }
+	.btn-primary:hover svg { transform: translateX(2px); }
 	.btn-ghost {
 		display: inline-flex;
 		align-items: center;
-		color: var(--text-secondary);
-		padding: 0.875rem 1.75rem;
-		border-radius: var(--radius-md);
+		color: var(--text-tertiary);
+		padding: 0.8125rem 2rem;
+		border-radius: var(--radius-sm);
 		font-weight: 500;
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
 		border: 1px solid var(--border-primary);
-		transition: all var(--transition-fast);
+		transition: all var(--transition-base);
 	}
 	.btn-ghost:hover {
 		color: var(--text-primary);
 		border-color: var(--border-hover);
-		background: rgba(255, 255, 255, 0.03);
 	}
 
 	/* ═══ Mission ═══ */
@@ -306,8 +304,8 @@ import ROICalculator from '../components/ROICalculator.astro';
 	/* ═══ Services ═══ */
 	.services {
 		background:
-			radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.03) 0%, transparent 60%),
-			radial-gradient(ellipse at 80% 50%, rgba(99, 102, 241, 0.02) 0%, transparent 60%);
+			radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.02) 0%, transparent 60%),
+			radial-gradient(ellipse at 80% 50%, rgba(6, 182, 212, 0.015) 0%, transparent 60%);
 	}
 	.services-grid {
 		display: grid;
@@ -336,21 +334,21 @@ import ROICalculator from '../components/ROICalculator.astro';
 	}
 	.service-card:hover {
 		border-color: var(--border-hover);
-		transform: translateY(-4px);
-		box-shadow: var(--shadow-glow);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-md);
 		background: var(--bg-card-hover);
 	}
 	.service-card:hover::before { opacity: 1; }
 	.card-icon {
-		width: 48px;
-		height: 48px;
+		width: 44px;
+		height: 44px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background: var(--accent-glow);
 		border: 1px solid rgba(59, 130, 246, 0.15);
-		border-radius: var(--radius-md);
-		color: var(--accent-light);
+		border-radius: var(--radius-sm);
+		color: var(--accent);
 		margin-bottom: var(--space-lg);
 	}
 	.service-card h3 {

@@ -211,19 +211,20 @@
         gap: 0.5rem;
         width: 100%;
         margin-top: var(--space-xl);
-        padding: 0.875rem;
-        background: var(--accent);
+        padding: 0.8125rem;
+        background: linear-gradient(135deg, var(--accent), var(--cyan));
         color: white;
         font-weight: 600;
-        font-size: 0.9375rem;
-        border-radius: var(--radius-md);
-        transition: all var(--transition-fast);
+        font-size: 0.8125rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        border-radius: var(--radius-sm);
+        transition: all var(--transition-base);
     }
     .calc-cta:hover {
-        background: var(--accent-dark);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        background: linear-gradient(135deg, var(--accent-light), var(--cyan-light));
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
     }
     .calc-cta svg { transition: transform var(--transition-fast); }
-    .calc-cta:hover svg { transform: translateX(3px); }
+    .calc-cta:hover svg { transform: translateX(2px); }
 </style>

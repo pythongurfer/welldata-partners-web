@@ -119,10 +119,10 @@ const { Content } = await render(entry);
     .tag {
         font-size: 0.6875rem;
         font-weight: 500;
-        color: var(--accent-light);
-        background: var(--accent-glow);
-        padding: 0.25rem 0.625rem;
-        border-radius: 100px;
+        color: var(--text-muted);
+        border: 1px solid var(--border-primary);
+        padding: 0.1875rem 0.5rem;
+        border-radius: var(--radius-sm);
         letter-spacing: 0.02em;
     }
 
@@ -169,12 +169,13 @@ const { Content } = await render(entry);
     .prose :global(a) {
         color: var(--accent-light);
         text-decoration: underline;
-        text-underline-offset: 2px;
-        text-decoration-color: rgba(96, 165, 250, 0.3);
-        transition: text-decoration-color var(--transition-fast);
+        text-underline-offset: 3px;
+        text-decoration-color: rgba(96, 165, 250, 0.25);
+        transition: text-decoration-color var(--transition-fast), color var(--transition-fast);
     }
     .prose :global(a:hover) {
-        text-decoration-color: var(--accent-light);
+        color: var(--accent-light);
+        text-decoration-color: rgba(59, 130, 246, 0.4);
     }
     .prose :global(ul), .prose :global(ol) {
         margin-bottom: 1.25rem;
@@ -187,7 +188,7 @@ const { Content } = await render(entry);
         color: var(--accent);
     }
     .prose :global(blockquote) {
-        border-left: 3px solid var(--accent);
+        border-left: 2px solid var(--accent);
         padding-left: 1.25rem;
         margin: 2rem 0;
         color: var(--text-tertiary);
@@ -297,11 +298,12 @@ const { Content } = await render(entry);
     .cta-btn.email {
         background: var(--accent);
         color: white;
+        font-weight: 600;
+        letter-spacing: 0.02em;
     }
     .cta-btn.email:hover {
-        background: var(--accent-dark);
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        background: var(--accent-light);
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
     }
     @media (max-width: 768px) {
         .cta-card {
