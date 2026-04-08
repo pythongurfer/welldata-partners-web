@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="/" class="logo">
-                    <span class="well">Well</span>Data <span class="partners">Partners</span>
+                    <img src="/images/logo.png" alt="WellData Partners" class="logo-img" />
                 </a>
                 <p>Data Intelligence for the Energy Sector.<br/>Specialized in Vaca Muerta operations.</p>
             </div>
@@ -60,7 +60,10 @@ const currentYear = new Date().getFullYear();
         display: block;
         margin-bottom: 1rem;
     }
-    .well { color: var(--accent); }
+    .logo-img {
+        height: 36px;
+        width: auto;
+    }
     .footer-brand p { font-size: 0.9rem; line-height: 1.6; }
 
     h4 { color: white; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; }

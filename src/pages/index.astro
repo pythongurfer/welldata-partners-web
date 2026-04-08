@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ROICalculator from '../components/ROICalculator.astro'; // Importar
 ---
 
 <Layout title="WellData Partners | Data Intelligence for O&G" description="Maximizing operational efficiency in Vaca Muerta through advanced data architecture and predictive analytics.">
@@ -78,6 +79,16 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<section id="calculator" class="calculator-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Calculate Your Savings</h2>
+				<p>See the real economic impact of optimizing your artificial lift operations.</p>
+			</div>
+			<ROICalculator />
+		</div>
+	</section>
+
 </Layout>
 
 <style>
@@ -115,6 +126,14 @@ import Layout from '../layouts/Layout.astro';
 
 	/* Services */
 	.services { padding: 8rem 0; background: rgba(255,255,255,0.02); }
+
+	/* Calculator */
+	.calculator-section {
+		padding: 6rem 0 8rem;
+		background: linear-gradient(180deg, transparent 0%, rgba(37, 99, 235, 0.03) 50%, transparent 100%);
+		border-top: 1px solid rgba(255,255,255,0.05);
+	}
+
 	.section-header { text-align: center; margin-bottom: 4rem; }
 	.section-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 	
@@ -151,3 +170,5 @@ import Layout from '../layouts/Layout.astro';
 		h1 { font-size: 2.5rem; }
 	}
 </style>
+
+
