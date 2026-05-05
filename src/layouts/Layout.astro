@@ -214,39 +214,48 @@ const organizationSchema = JSON.stringify({
     <slot />
     <Footer />
 
-    <!-- WhatsApp floating button -->
-    <!-- TODO: replace +5491100000000 with your WhatsApp number (country code + number, no spaces or +) -->
+    <!-- Book a call floating CTA -->
+    <!-- TODO: replace the href with your Calendly link, e.g. https://calendly.com/welldata-partners/intro -->
     <a
-      href="https://wa.me/5491100000000?text=Hola%20WellData%2C%20quisiera%20saber%20m%C3%A1s%20sobre%20sus%20soluciones%20para%20upstream%20O%26G."
-      class="whatsapp-fab"
+      href="https://calendly.com/welldata-partners/intro"
+      class="book-fab"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
+      aria-label="Book a call"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="currentColor"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.466 2.023 7.761L0 32l8.479-2.001A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.851l-.485-.289-5.031 1.188 1.211-4.901-.317-.503A13.26 13.26 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.271-9.995c-.398-.199-2.355-1.162-2.72-1.294-.364-.133-.63-.199-.895.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.299-.863.1-.398-.199-1.681-.619-3.202-1.977-1.183-1.056-1.982-2.361-2.214-2.759-.232-.398-.025-.614.175-.812.179-.179.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.066-.498-.033-.697-.1-.199-.895-2.158-1.227-2.956-.323-.775-.651-.669-.895-.681l-.762-.013c-.265 0-.696.1-1.062.498-.364.398-1.393 1.362-1.393 3.321s1.427 3.852 1.626 4.118c.199.265 2.808 4.287 6.804 6.013.951.41 1.693.655 2.271.839.954.304 1.822.261 2.508.158.765-.114 2.355-.963 2.688-1.893.332-.93.332-1.728.232-1.893-.099-.165-.364-.265-.762-.465z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+      <span>Book a call</span>
     </a>
 
     <style>
-      .whatsapp-fab {
+      .book-fab {
         position: fixed;
         bottom: 1.75rem;
         right: 1.75rem;
         z-index: 9999;
-        width: 3.25rem;
-        height: 3.25rem;
-        border-radius: 50%;
-        background: #25D366;
-        color: #fff;
         display: flex;
         align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 20px rgba(37,211,102,0.45);
-        transition: transform 200ms ease, box-shadow 200ms ease;
+        gap: 0.5rem;
+        padding: 0.65rem 1.15rem;
+        border-radius: 2rem;
+        background: var(--accent);
+        color: #fff;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
         text-decoration: none;
+        box-shadow: 0 4px 20px rgba(59,130,246,0.35);
+        transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
       }
-      .whatsapp-fab:hover {
-        transform: scale(1.08);
-        box-shadow: 0 6px 28px rgba(37,211,102,0.6);
+      .book-fab:hover {
+        background: var(--accent-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(59,130,246,0.5);
+      }
+      @media (max-width: 480px) {
+        .book-fab span { display: none; }
+        .book-fab { padding: 0.75rem; border-radius: 50%; }
       }
     </style>
 </body>
