@@ -4,6 +4,8 @@ description: "Análisis técnico de las estrategias más efectivas para reducir 
 pubDate: 2026-04-01
 author: "WellData Insights Team"
 tags: ["vaca-muerta", "opex", "optimización", "datos", "IA Soberana", "RAG"]
+lang: "es"
+translationKey: "vaca-muerta-opex"
 ---
 
 ## La Nueva Frontera de la Eficiencia Operativa en Cuencas No Convencionales

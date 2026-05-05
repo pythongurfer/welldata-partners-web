@@ -4,6 +4,8 @@ description: "Cómo las operadoras de O&G pueden aprovechar LLMs y modelos RAG s
 pubDate: 2026-04-08
 author: "WellData Insights Team"
 tags: ["Inteligencia Artificial", "Soberanía de Datos", "RAG", "Edge Computing", "Vaca Muerta"]
+lang: "es"
+translationKey: "ai-paradox-sovereignty"
 ---
 
 ## El Dilema del "Shadow AI" en la Cuenca

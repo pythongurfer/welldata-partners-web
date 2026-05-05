@@ -4,6 +4,8 @@ description: "Análisis técnico con referencias de la SPE sobre cómo la analí
 pubDate: 2026-04-08
 author: "WellData Insights Team"
 tags: ["Levantamiento Artificial", "ESP", "PCP", "Predictive Maintenance", "Vaca Muerta", "SPE"]
+lang: "es"
+translationKey: "artificial-lift-optimization"
 ---
 
 *Fecha: 8 de Abril de 2026 — Berlín / Neuquén*

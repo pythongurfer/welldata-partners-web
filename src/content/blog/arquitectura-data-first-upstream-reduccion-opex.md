@@ -4,6 +4,8 @@ description: "Profundidad técnica y estratégica sobre cómo el control adaptat
 pubDate: 2026-05-05
 author: "WellData Insights Team"
 tags: ["Vaca Muerta", "Levantamiento Artificial", "Edge Computing", "ESP", "PCP", "ROI", "SPE"]
+lang: "es"
+translationKey: "adaptive-control-revolution"
 ---
 
 ## La Industria en 2026: Producir mejor, no solo producir mas

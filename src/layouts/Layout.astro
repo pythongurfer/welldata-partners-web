@@ -1,10 +1,10 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-const { title, description = "WellData Partners: Advanced Data Architecture and Machine Learning for O&G Operators." } = Astro.props;
+const { title, description = "WellData Partners: Advanced Data Architecture and Machine Learning for O&G Operators.", lang = 'es', hreflangEs, hreflangEn } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,10 @@ const { title, description = "WellData Partners: Advanced Data Architecture and 
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://welldatapartners.com/linkedin-preview.jpg" />
+
+    {hreflangEs && <link rel="alternate" hreflang="es" href={hreflangEs} />}
+    {hreflangEn && <link rel="alternate" hreflang="en" href={hreflangEn} />}
+    {hreflangEn && <link rel="alternate" hreflang="x-default" href={hreflangEn} />}
 
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-CZ0DH2Z18H"></script>
     <script is:inline>
