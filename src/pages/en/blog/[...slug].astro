@@ -23,9 +23,29 @@ const { Content } = await render(entry);
 const slug = entry.id.replace('en/', '');
 const canonicalEn = `https://welldatapartners.com/en/blog/${slug}`;
 const canonicalEs = esSlug ? `https://welldatapartners.com/blog/${esSlug}` : null;
+const blogPostingSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": entry.data.title,
+  "description": entry.data.description,
+  "datePublished": entry.data.pubDate.toISOString(),
+  "author": {
+    "@type": "Organization",
+    "name": entry.data.author,
+    "url": "https://welldatapartners.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WellData Partners",
+    "logo": { "@type": "ImageObject", "url": "https://welldatapartners.com/favicon.svg" }
+  },
+  "url": canonicalEn,
+  "inLanguage": "en",
+  "keywords": entry.data.tags.join(", ")
+});
 ---
 
-<Layout title={`${entry.data.title} | WellData Partners`} description={entry.data.description} lang="en" hreflangEs={canonicalEs} hreflangEn={canonicalEn}>
+<Layout title={`${entry.data.title} | WellData Partners`} description={entry.data.description} lang="en" hreflangEs={canonicalEs} hreflangEn={canonicalEn} schema={blogPostingSchema}>
     <main class="article-page">
         <article>
             <header class="article-header">

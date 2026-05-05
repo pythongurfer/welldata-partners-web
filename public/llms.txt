@@ -1,0 +1,51 @@
+# WellData Partners
+
+> Data architecture and machine learning consulting for upstream oil & gas operators. We help E&P companies reduce OPEX and eliminate non-productive time (NPT) through edge-to-cloud infrastructure, predictive analytics, and digital twin design.
+
+WellData Partners is a specialized consulting firm focused on the digital transformation of upstream petroleum operations. We build the data infrastructure that connects field sensors to boardroom decisions — from IIoT sensor integration and Unified Namespace (UNS) design at the edge, to cloud-based ML models for predictive maintenance, artificial lift optimization, and reservoir analytics.
+
+Our clients are upstream operators in unconventional and mature conventional basins who need to reduce lifting costs, extend asset life, and improve production performance without the overhead of large internal data teams. We are fluent in both the operational realities of the field and the technical depth of modern data engineering.
+
+## Services
+
+- **Edge-to-Cloud Data Architecture**: IIoT sensor integration, protocol conversion (Modbus RTU/TCP, OPC-UA, MQTT), Unified Namespace design, edge computing for remote field environments. Enables real-time data from every well, pump, and compressor without cloud dependency.
+- **Predictive Operations & Maintenance**: ML models for failure prediction in artificial lift systems (ESPs, rod pumps, gas lift), anomaly detection, frac fleet optimization. Typical result: 30–50% reduction in unplanned workovers.
+- **Reservoir & Production Analytics**: Digital twin design, production optimization, waterflood management, well interference analysis, diluent optimization (heavy oil). Enables data-driven decisions on injection patterns, lift settings, and production allocation.
+- **ESG Data Infrastructure**: Real-time flaring measurement, methane leak detection, Scope 1/2 emissions reporting, pipeline integrity monitoring. Converts ESG compliance from a cost center into a capital markets advantage.
+
+## Technical Insights (Blog)
+
+### Spanish (ES)
+
+- [Vaca Muerta: Arquitectura Data-First y Reducción de OPEX](https://welldatapartners.com/blog/arquitectura-data-first-upstream-reduccion-opex): How Unified Namespace and edge computing reduce lifting costs in Vaca Muerta unconventional operations.
+- [Optimización de Levantamiento Artificial con Analítica Predictiva](https://welldatapartners.com/blog/optimizacion-levantamiento-artificial-analitica-predictiva): ML models for ESP and rod pump failure prediction in Vaca Muerta horizontal wells.
+- [La Paradoja de la IA en el Upstream: Soberanía de Datos](https://welldatapartners.com/blog/paradoja-ia-upstream-soberania-datos): Why AI initiatives fail without data sovereignty and how to fix it.
+- [Noruega Mar del Norte: Optimización de Campos Maduros](https://welldatapartners.com/blog/noruega-mar-del-norte-optimizacion-campos-maduros): Digital transformation of mature North Sea fields — compaction, subsidence, and predictive maintenance.
+- [Permian Basin USA: Gestión de Agua e Interferencia de Pozos](https://welldatapartners.com/blog/permian-basin-usa-gestion-agua-interferencia-pozos): Water disposal optimization and well interference management in the Delaware and Midland sub-basins.
+- [Siberia Occidental: Operaciones Remotas en Permafrost](https://welldatapartners.com/blog/siberia-occidental-rusia-operaciones-remotas-permafrost): Edge AI and IIoT retrofitting for Western Siberia's legacy infrastructure and extreme climate.
+- [Medio Oriente: Inyección de Agua y Gestión de Reservorios](https://welldatapartners.com/blog/medio-oriente-inyeccion-agua-optimizacion-reservorios): ML-driven waterflood optimization and ICV control in Saudi Arabia/UAE mega-reservoirs.
+- [Venezuela Faja del Orinoco: Crudo Pesado y OPEX](https://welldatapartners.com/blog/venezuela-orinoco-crudo-pesado-optimizacion-opex): Diluent optimization, ESP predictive maintenance, and digital twins for extra-heavy oil operations.
+- [África: Nigeria, Angola, Argelia — Digitalización Upstream](https://welldatapartners.com/blog/africa-nigeria-angola-optimizacion-upstream-digital): Pipeline integrity monitoring, gas flaring reduction, and FPSO predictive maintenance in African upstream.
+
+### English (EN)
+
+- [North Sea Norway: Mature Field Optimization](https://welldatapartners.com/en/blog/north-sea-norway-mature-field-optimization): Digital transformation of mature North Sea fields.
+- [Permian Basin USA: Water Management and Well Interference](https://welldatapartners.com/en/blog/permian-basin-usa-water-management-well-interference): Water disposal and well interference in the Permian Basin.
+- [Western Siberia Russia: Remote Operations in Permafrost](https://welldatapartners.com/en/blog/western-siberia-russia-remote-operations-permafrost): Edge computing under extreme arctic conditions.
+- [Middle East: Water Injection and Reservoir Optimization](https://welldatapartners.com/en/blog/middle-east-water-injection-reservoir-optimization): ML-based waterflood and ICV optimization at Saudi Aramco / ADNOC scale.
+- [Venezuela Orinoco Belt: Heavy Oil OPEX Optimization](https://welldatapartners.com/en/blog/venezuela-orinoco-heavy-oil-opex-optimization): Extra-heavy crude, diluent optimization, and data architecture for recovery.
+- [Africa Upstream: Nigeria, Angola, Algeria](https://welldatapartners.com/en/blog/africa-nigeria-angola-upstream-digital-optimization): Gas flaring, pipeline integrity, and FPSO maintenance in African upstream.
+- [Adaptive Control Revolution: Artificial Lift](https://welldatapartners.com/en/blog/adaptive-control-revolution-artificial-lift): From reactive to predictive artificial lift management.
+- [AI Paradox: Upstream Data Sovereignty](https://welldatapartners.com/en/blog/ai-paradox-upstream-data-sovereignty): Why AI projects fail without data architecture and how to build the right foundation.
+
+## Contact
+
+- Email: contact@welldatapartners.com
+- Website: https://welldatapartners.com
+- Blog (ES): https://welldatapartners.com/blog
+- Blog (EN): https://welldatapartners.com/en/blog
+- LinkedIn: https://www.linkedin.com/company/welldata-partners/
+
+## Optional
+
+- [llms-full.txt](https://welldatapartners.com/llms-full.txt)

@@ -1,0 +1,57 @@
+# https://welldatapartners.com/robots.txt
+
+# ─── General crawlers ───
+User-agent: *
+Allow: /
+Disallow: /dist/
+
+# ─── Google ───
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# ─── Bing ───
+User-agent: Bingbot
+Allow: /
+
+# ─── OpenAI / ChatGPT ───
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ─── Anthropic / Claude ───
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ─── Perplexity ───
+User-agent: PerplexityBot
+Allow: /
+
+# ─── Google Gemini / Bard ───
+User-agent: Google-Extended
+Allow: /
+
+# ─── Meta AI ───
+User-agent: FacebookBot
+Allow: /
+
+# ─── Common Crawl (used by many LLMs for training) ───
+User-agent: CCBot
+Allow: /
+
+# ─── Cohere ───
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://welldatapartners.com/sitemap-index.xml
