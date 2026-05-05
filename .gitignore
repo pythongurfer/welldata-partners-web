@@ -18,8 +18,14 @@ pnpm-debug.log*
 .env.*
 !.env.example
 
-# public images (large assets, not tracked in git)
-public/images/
+# public images (large raster assets, not tracked in git)
+public/images/*.png
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.gif
+public/images/*.webp
+# SVG logos ARE tracked
+!public/images/logo-welldata.svg
 
 # macOS-specific files
 .DS_Store

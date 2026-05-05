@@ -4,6 +4,18 @@ const currentYear = new Date().getFullYear();
 <footer class="footer">
     <div class="footer-accent"></div>
     <div class="container">
+        <!-- CTA Banner -->
+        <div class="footer-cta">
+            <div class="footer-cta-text">
+                <h3>Ready to reduce your OPEX?</h3>
+                <p>Let's discuss how predictive intelligence can transform your operations.</p>
+            </div>
+            <a href="mailto:contact@welldatapartners.com" class="footer-cta-btn">
+                Get in Touch
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="/" class="logo">
@@ -61,6 +73,59 @@ const currentYear = new Date().getFullYear();
         margin: 0 auto;
         padding: 0 var(--space-xl);
     }
+    .footer-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-xl);
+        padding: var(--space-2xl);
+        margin-bottom: var(--space-3xl);
+        background: var(--bg-card);
+        border: 1px solid var(--border-primary);
+        border-radius: var(--radius-xl);
+        position: relative;
+        overflow: hidden;
+    }
+    .footer-cta::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .footer-cta-text h3 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+    .footer-cta-text p {
+        font-size: 0.9375rem;
+        color: var(--text-tertiary);
+    }
+    .footer-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.75rem;
+        background: var(--accent);
+        color: white;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        border-radius: var(--radius-md);
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        transition: all var(--transition-base);
+    }
+    .footer-cta-btn:hover {
+        background: var(--accent-dark);
+        border-color: rgba(96, 165, 250, 0.5);
+        box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        transform: translateY(-1px);
+    }
+    .footer-cta-btn svg { transition: transform var(--transition-fast); }
+    .footer-cta-btn:hover svg { transform: translateX(2px); }
     .footer-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -127,6 +192,10 @@ const currentYear = new Date().getFullYear();
         background: var(--accent);
     }
     @media (max-width: 768px) {
+        .footer-cta {
+            flex-direction: column;
+            text-align: center;
+        }
         .footer-grid {
             grid-template-columns: 1fr;
             gap: var(--space-2xl);
