@@ -16,7 +16,7 @@ El próximo desafío es capturar el valor de esa escala.
 
 [YPF reportó](https://www.reuters.com/business/energy/argentinas-ypf-reports-121-billion-second-quarter-profit-2026-08-10/) un segundo trimestre récord. Su producción de *shale oil* creció 47% interanual, hasta 213.000 barriles por día. La compañía apunta a 250.000 barriles por día hacia fin de año. Su EBITDA ajustado trimestral fue de USD 2.800 millones.
 
-[Tecpetrol](https://www.tecpetrol.com/) avanza con Los Toldos II Este. El proyecto contempla cerca de 400 pozos. La inversión estimada es de USD 3.000 millones. La producción objetivo es de 70.000 barriles por día en 2027.
+[Tecpetrol](https://www.tecpetrol.com/es/tecpetrol-en-vaca-muerta) avanza con Los Toldos II Este. El proyecto contempla cerca de 400 pozos. La inversión estimada es de USD 3.000 millones. La producción objetivo es de 70.000 barriles por día en 2027.
 
 La señal es clara. La actividad crece. El capital también.
 
@@ -131,4 +131,4 @@ En Welldata Partners trabajamos sobre esa intersección. Ingeniería. Analytics.
 ## Fuentes
 
 * [Reuters. *Argentina's YPF reports $1.21 billion second-quarter profit*. 10 de agosto de 2026.](https://www.reuters.com/business/energy/argentinas-ypf-reports-121-billion-second-quarter-profit-2026-08-10/)
-* [Tecpetrol. Información corporativa sobre Los Toldos II Este.](https://www.tecpetrol.com/)
+* [Tecpetrol. Información corporativa sobre Vaca Muerta.](https://www.tecpetrol.com/es/tecpetrol-en-vaca-muerta)
